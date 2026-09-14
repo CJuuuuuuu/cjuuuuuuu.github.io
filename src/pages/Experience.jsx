@@ -1,6 +1,12 @@
 const experiences = [
   {
     date: '2025–26',
+    title: 'Full-Stack Engineer',
+    org: 'SG44 Conference 2026 Official Website, Taiwan',
+    desc: null,
+  },
+  {
+    date: '2025–26',
     title: 'Research Assistant',
     org: 'National Science and Technology Council',
     desc: '"Where Mountains Meet the Sea: Observation of Coastal and Foothill Social-Ecological Systems and Co-creation of Sustainable Resilience Policies in Changhua County"',
