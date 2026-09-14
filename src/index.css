@@ -99,6 +99,20 @@ a:hover { opacity: 0.6; }
 }
 .nav__link:hover, .nav__link.active { color: var(--fg); opacity: 1; }
 
+.nav__mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--fg);
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-right: -0.5rem;
+}
+
+.nav__mobile-menu {
+  display: none;
+}
+
 /* ─── Page Wrapper ─── */
 .page-wrap {
   max-width: var(--max-w);
@@ -192,8 +206,8 @@ a:hover { opacity: 0.6; }
 
 .home-bio {
   font-family: var(--font-serif);
-  font-size: 1.1rem;
-  line-height: 1.85;
+  font-size: 1rem;
+  line-height: 1.8;
   color: var(--fg);
   font-weight: 400;
   margin-bottom: 0;
@@ -239,11 +253,11 @@ a:hover { opacity: 0.6; }
 }
 .about-article p {
   font-family: var(--font-serif);
-  font-size: 1.15rem;
-  line-height: 1.9;
+  font-size: 1rem;
+  line-height: 1.8;
   color: var(--fg);
   font-weight: 400;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 /* ─── Timeline Entries ─── */
@@ -411,11 +425,41 @@ a:hover { opacity: 0.6; }
   .home-photo-col { align-items: flex-start; }
   .home-avatar { width: 160px; height: 160px; }
   .home-name { font-size: 2.2rem; }
+  
+  .nav__links { display: none; }
+  .nav__mobile-toggle { display: block; }
+  
+  .nav__mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(248, 247, 244, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 2.5rem 2.5rem;
+    gap: 1.5rem;
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s var(--ease), opacity 0.3s var(--ease);
+    z-index: -1;
+  }
+  .nav__mobile-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav__mobile-menu .nav__link {
+    font-size: 0.85rem;
+  }
 }
 @media (max-width: 600px) {
   .entry { grid-template-columns: 1fr; gap: 0.4rem; }
   .skill-row { grid-template-columns: 1fr; gap: 0.3rem; }
-  .nav__links { gap: 1.2rem; }
 }
 
 /* ─── Footer ─── */
