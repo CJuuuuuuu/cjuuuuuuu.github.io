@@ -3,7 +3,7 @@ const education = [
     date: '2026–present',
     degree: 'Ph.D. in Geography',
     school: 'University of California, Santa Barbara, CA, USA',
-    note: null,
+    note: 'Graduate Associate, Broom Center for Demography',
   },
   {
     date: '2025–26',
@@ -15,7 +15,7 @@ const education = [
     date: '2021–25',
     degree: 'B.A. in Land Economics (Geomatics Program)',
     school: 'National Chengchi University (NCCU), Taipei, Taiwan',
-    note: 'Double Major: Global Studies · Minor: Computer Science · Certificate: Big Data Analytics Program (Completed 2025)',
+    note: 'Second major: Global Studies · Minor: Computer Science · Certificate: Big Data Analytics, 2025',
   },
 ];
 
@@ -43,15 +43,15 @@ export default function About() {
         <span className="section-label page-fade" style={{ animationDelay: '0.2s' }}>Biography</span>
         <div className="about-article page-fade" style={{ animationDelay: '0.25s', marginBottom: '4rem' }}>
           <p>
-            Chia-Jung Lin is a Ph.D. student in the Department of Geography at the University of California, Santa Barbara, and a Graduate Associate of the Broom Center for Demography. Her research examines how spatial and environmental contexts shape population health, inequality, mobility, and demographic change. Trained in geomatics, global studies, computer science, and big data analytics, she uses GIS, spatial statistics, spatiotemporal modeling, remote sensing, text analysis, and computational methods to study socially relevant questions.
+            Chia-Jung Lin is a Ph.D. student in the Department of Geography at the University of California, Santa Barbara, and a Graduate Associate of the Broom Center for Demography. Her research examines how spatial and environmental contexts shape population health, well-being, mobility, and demographic change. Trained in geomatics, global studies, computer science, and big data analytics, she uses GIS, remote sensing, spatial and spatiotemporal analysis, spatial statistics, and computational methods to study socially relevant questions.
           </p>
 
           <p>
-            Her work is guided by a problem-driven approach to spatial science. She identifies research questions from everyday life, public discourse, and community concerns, and translates them into rigorous spatial analysis. Her recent projects have examined food environments and subjective well-being, psychiatric service accessibility and crime, urban quietness, and the spatial relationship between fertility decline and pet ownership in Taiwan. Through these projects, she has become especially interested in how the same social and environmental contexts can shape people’s lives differently depending on their age, health, family circumstances, and life events.
+            Her work is guided by a problem-driven approach to spatial science. She identifies research questions from everyday life, public discourse, and community concerns, and translates them into rigorous spatial analysis. Her recent projects have examined food environments and subjective well-being, psychiatric service accessibility and crime, urban quietness, fertility decline and pet ownership, and disaster risk and resilience in Taiwan.
           </p>
 
           <p>
-            Her doctoral research focuses on how individuals and households navigate major life transitions through residential mobility, adaptation in place, and changes in everyday activity spaces. She is particularly interested in how these spatial strategies shape health and well-being across the life course. More broadly, she aims to develop spatial methods that better reflect lived realities and inform policies related to health, well-being, and environmental equity.
+            More broadly, she is interested in health, urban, and population geography, including environmental exposure and well-being, spatial accessibility, urban and transportation geography, population dynamics, and methods that better reflect lived realities and inform policies related to health, well-being, and environmental equity.
           </p>
         </div>
       </div>

@@ -1,39 +1,15 @@
 const experiences = [
   {
     date: '2025–26',
-    title: 'Full-Stack Engineer',
-    org: 'SG44 Conference 2026 Official Website, Taiwan',
-    desc: null,
+    title: 'Research Assistant',
+    org: 'National Changhua University of Education',
+    desc: 'Project: "Where Mountains Meet the Sea: Observation of Coastal and Foothill Social-Ecological Systems and Co-creation of Sustainable Resilience Policies in Changhua County" · Funded by the National Science and Technology Council, Taiwan.',
   },
   {
     date: '2025–26',
     title: 'Research Assistant',
-    org: 'National Science and Technology Council',
-    desc: '"Where Mountains Meet the Sea: Observation of Coastal and Foothill Social-Ecological Systems and Co-creation of Sustainable Resilience Policies in Changhua County"',
-  },
-  {
-    date: '2025–26',
-    title: 'Research Assistant',
-    org: 'National Science and Technology Council',
-    desc: '"Re-Making the New City: Air-Rights Governance and Value Negotiation in Peri-Urban Zones under Climate Change"',
-  },
-  {
-    date: '2025–present',
-    title: 'Full-Stack Engineer',
-    org: 'SmartGeo',
-    desc: 'Intelligent Land Use Assessment System',
-  },
-  {
-    date: '2024–25',
-    title: 'Research Assistant',
-    org: 'National Science and Technology Council',
-    desc: '"Anticipatory Innovation Governance for Sustainable Cities: Incremental Floor Area as a Fiscal Innovation Tool for Transit-Oriented Planning"',
-  },
-  {
-    date: '2024–25',
-    title: 'Full-Stack Engineer',
-    org: 'Independent Project',
-    desc: '"誰敢跟我桌隊" (Table Tennis Tournament Management System)',
+    org: 'National Chengchi University',
+    desc: 'Project: "Re-Making the New City: Air-Rights Governance and Value Negotiation in Peri-Urban Zones under Climate Change" · Funded by the National Science and Technology Council, Taiwan.',
   },
   {
     date: '2024–26',
@@ -42,6 +18,12 @@ const experiences = [
     desc: null,
   },
   {
+    date: '2024–25',
+    title: 'Research Assistant',
+    org: 'National Chengchi University',
+    desc: 'Project: "Anticipatory Innovation Governance for Sustainable Cities: Incremental Floor Area as a Fiscal Innovation Tool for Transit-Oriented Planning" · Funded by the National Science and Technology Council, Taiwan.',
+  },
+  {
     date: '2024',
     title: 'Intern',
     org: 'Center of GIS, Research Center for Humanities and Social Sciences (RCHSS), Academia Sinica',
@@ -50,14 +32,14 @@ const experiences = [
   {
     date: '2024',
     title: 'Research Assistant',
-    org: 'National Science and Technology Council',
-    desc: '"Building the Technological and Social Foundation for an Energy Just Transition: A Cross-Regional Study on Local Energy Democracy"',
+    org: 'National Chengchi University',
+    desc: 'Project: "Building the Technological and Social Foundation for an Energy Just Transition: A Cross-Regional Study on Local Energy Democracy" · Funded by the National Science and Technology Council, Taiwan.',
   },
   {
     date: '2024',
     title: 'Research Assistant',
-    org: 'National Science and Technology Council',
-    desc: '"Deep Learning-Based Automatic Extraction of Building Boundaries from Real-World Urban Images"',
+    org: 'National Chengchi University',
+    desc: 'Project: "Deep Learning-Based Automatic Extraction of Building Boundaries from Real-World Urban Images" · Funded by the National Science and Technology Council, Taiwan.',
   },
   {
     date: '2023',
@@ -66,16 +48,46 @@ const experiences = [
     desc: null,
   },
   {
-    date: '2023 SP',
+    date: '2022–26',
+    title: 'Research Assistant',
+    org: 'National Chengchi University',
+    desc: 'Project: "Research on the Impact of Climate Change and Agricultural Environments on the Lanyang River Basin Ecosystem and Adaptation Strategies: Impact Assessment and Adaptation Strategies of Rural Community Industrial Development on Ecosystem Services" · Funded by the National Science and Technology Council, Taiwan.',
+  },
+];
+
+const teaching = [
+  {
+    date: 'Fall 2026',
+    title: 'Teaching Assistant',
+    org: 'University of California, Santa Barbara',
+    desc: 'Health Geography',
+  },
+  {
+    date: 'Spring 2023',
     title: 'Teaching Assistant',
     org: 'National Chengchi University',
     desc: 'MOOC: "Application of VR and GIS in Eco-tourism"',
   },
+];
+
+const additional = [
   {
-    date: '2022–26',
-    title: 'Research Assistant',
-    org: 'National Science and Technology Council',
-    desc: '"Research on the Impact of Climate Change and Agricultural Environments on the Lanyang River Basin Ecosystem and Adaptation Strategies: Impact Assessment and Adaptation Strategies of Rural Community Industrial Development on Ecosystem Services"',
+    date: '2025–present',
+    title: 'Full-Stack Engineer',
+    org: 'SmartGeo',
+    desc: 'Intelligent Land Use Assessment System',
+  },
+  {
+    date: '2025–26',
+    title: 'Full-Stack Engineer',
+    org: 'SG44 Conference 2026 Official Website, Taiwan',
+    desc: null,
+  },
+  {
+    date: '2024–25',
+    title: 'Full-Stack Engineer',
+    org: 'Independent Project',
+    desc: '"誰敢跟我桌隊" (Table Tennis Tournament Management System)',
   },
   {
     date: '2021–26',
@@ -89,10 +101,44 @@ export default function Experience() {
   return (
     <>
       <div className="page-wrap page-wrap-narrow">
-        <span className="section-label page-fade">Research &amp; Professional Experience</span>
+        <span className="section-label page-fade">Research Experience</span>
 
         <div className="entry-list">
           {experiences.map((e, i) => (
+            <div className="entry" key={i}>
+              <span className="entry-date">{e.date}</span>
+              <div>
+                <div className="entry-title">{e.title}</div>
+                <div className="entry-sub">{e.org}</div>
+                {e.desc && (
+                  <div className="entry-desc">{e.desc}</div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <span className="section-label page-fade" style={{ animationDelay: '0.2s', marginTop: '4rem' }}>Teaching Experience</span>
+
+        <div className="entry-list">
+          {teaching.map((e, i) => (
+            <div className="entry" key={i}>
+              <span className="entry-date">{e.date}</span>
+              <div>
+                <div className="entry-title">{e.title}</div>
+                <div className="entry-sub">{e.org}</div>
+                {e.desc && (
+                  <div className="entry-desc">{e.desc}</div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <span className="section-label page-fade" style={{ animationDelay: '0.25s', marginTop: '4rem' }}>Additional Experience</span>
+
+        <div className="entry-list">
+          {additional.map((e, i) => (
             <div className="entry" key={i}>
               <span className="entry-date">{e.date}</span>
               <div>

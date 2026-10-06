@@ -11,7 +11,7 @@ const articles = [
     title: 'Measuring and managing urban quietness: Refining the Quietness Suitability Index (QSI) model for Asia\'s densely populated cities.',
     authors: 'Chia-Jung Lin, Jia-Hong Tang, Chih-Chung Fan, and Ta-Chien Chan*.',
     venue: 'Noise Mapping',
-    detail: '13(1), 20250025 (2025).',
+    detail: '13(1), 20250025 (2026).',
     doi: 'https://doi.org/10.1515/noise-2025-0025',
     doiLabel: '10.1515/noise-2025-0025',
   },
@@ -19,7 +19,7 @@ const articles = [
     title: 'Baby or pet? A spatial analysis of fertility decline and the rise of pet ownership in Taiwan.',
     authors: 'Meng-Jung Lin* and Chia-Jung Lin.',
     venue: 'Journal of Population Studies (Taiwan)',
-    detail: 'Accepted for publication (2026).',
+    detail: 'In press.',
     doi: null,
     doiLabel: null,
   },
@@ -39,7 +39,7 @@ const presentations = [
   {
     title: '"When GIS Meets the Law: Unraveling the Nexus of Mental Illness and Crime through Text Analysis and Spatio-Temporal Analysis."',
     authors: 'Chia-Jung Lin, Meng-Jung Lin, and Jihn-Fa Jan.',
-    venue: 'Conference of Pacific Neighborhood Consortium (PNC), Seoul, South Korea, Aug. 29–31, 2024; and Conference of Taiwan Geographic Information Society (TGIS), Taipei, Taiwan, July 11–12, 2024.',
+    venue: 'Pacific Neighborhood Consortium (PNC) Conference, Seoul, South Korea, Aug. 29–31, 2024; and Taiwan Geographic Information Society (TGIS) Conference, Taipei, Taiwan, July 11–12, 2024.',
   },
 ];
 
@@ -66,11 +66,7 @@ export default function Publications() {
           ))}
         </div>
 
-        <p className="page-fade" style={{ fontSize: '0.8rem', color: 'var(--subtle)', marginTop: '1.5rem', marginBottom: '4rem', animationDelay: '0.2s' }}>
-          * Corresponding author.
-        </p>
-
-        <span className="section-label page-fade" style={{ animationDelay: '0.25s' }}>Selected Conference Presentations</span>
+        <span className="section-label page-fade" style={{ animationDelay: '0.25s', marginTop: '4rem' }}>Selected Conference Presentations</span>
 
         <div className="pub-list">
           {presentations.map((p, i) => (
